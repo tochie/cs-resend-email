@@ -1,0 +1,41 @@
+.App {
+  font-style: sans-serif;
+  text-align: center;
+}
+
+.contentArea {
+  margin: 0 auto;
+  width: 300px;
+}
+.contentArea > .form {
+  padding-bottom: 50px;
+  margin-top: 45px;
+}
+.form .input {
+  display: block;
+  width: 75%;
+  height: 25px;
+  padding: 5px;
+  margin-top: 15px;
+  margin-left: 10%;
+  float: left;
+}
+
+.form > .eventType {
+  width: 240px;
+  padding: 10px 0 10px 0;
+  height: 40px;
+  margin-top: 15px;
+}
+
+.form > .resend {
+  padding: 10px;
+  width: 100px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: #ffffff;
+  background: #000000;
+  font-weight: bold;
+}
