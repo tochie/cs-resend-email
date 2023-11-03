@@ -21,21 +21,31 @@
   float: left;
 }
 
-.form > .eventType {
+.form > .candidateType {
   width: 240px;
   padding: 10px 0 10px 0;
   height: 40px;
   margin-top: 15px;
 }
 
-.form > .resend {
+.resend-disabled-true,
+.resend-disabled-false {
   padding: 10px;
   width: 100px;
   height: 40px;
   display: block;
   margin: 0 auto;
   margin-top: 30px;
+  font-weight: bold;
+}
+
+.resend-disabled-true {
+  color: darkgray;
+  background: lightgray;
+}
+
+.resend-disabled-false {
+  cursor: pointer;
   color: #ffffff;
   background: #000000;
-  font-weight: bold;
 }
