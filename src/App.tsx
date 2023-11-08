@@ -54,7 +54,7 @@ const ResendEmailForm = () => {
 
     try {
       // Validate email format using regular expression
-      const emailRegex = /^[A-Z0-9. _%+-]+@[A-Z0-9. -]+\. [A-z]{2,4}$/i;
+      const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/i;
       if (!emailRegex.test(email)) {
         alert("Invalid email format. Please enter a valid email address.");
         setEmail("");
