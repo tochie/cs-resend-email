@@ -1,44 +1,60 @@
 .App {
-  font-style: sans-serif;
-  text-align: center;
+  font-family: "Centra No1", Arial, Helvetica, sans-serif;
 }
 
 .contentArea {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   margin: 0 auto;
-  width: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .contentArea > .form {
   padding-bottom: 50px;
   margin-top: 45px;
 }
-.form .input {
-  display: block;
-  width: 75%;
+form > h1 {
+  text-align: center;
+}
+form > div.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+}
+form .input-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+  padding-right: 10px;
+}
+
+form .input,
+form .candidateType {
   height: 25px;
   padding: 5px;
   margin-top: 15px;
-  margin-left: 10%;
   float: left;
 }
-
-.form > .candidateType {
-  width: 240px;
-  padding: 10px 0 10px 0;
+form .candidateType {
+  padding: 0;
   height: 40px;
-  margin-top: 15px;
 }
 
 .resend-disabled-true,
 .resend-disabled-false {
-  padding: 10px;
-  width: 100px;
-  height: 40px;
-  display: block;
-  margin: 0 auto;
   margin-top: 30px;
+  background-color: black;
+  color: white;
   font-weight: bold;
+  padding: 10px 20px;
+  border: none;
 }
-
+.resend-disabled-false {
+  cursor: pointer;
+}
 .resend-disabled-true {
   color: darkgray;
   background: lightgray;
@@ -48,4 +64,27 @@
   cursor: pointer;
   color: #ffffff;
   background: #000000;
+}
+
+.instructions {
+  list-style-type: decimal;
+  padding: 0;
+  margin: 0;
+  margin-left: 15px;
+}
+p.description {
+  text-align: center;
+}
+
+p.p-instruction {
+  text-decoration: underline;
+  text-align: center;
+}
+.instructions li {
+  padding: 2px 0;
+  text-align: left;
+}
+
+.instructions li:last-child {
+  border-bottom: none;
 }
